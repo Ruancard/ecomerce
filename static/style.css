@@ -1,0 +1,82 @@
+body{
+    background-color: darkgray;
+}
+
+.lateral_menu{
+    width: 40vw;
+    background-color: #504c5a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    left: -40vw
+}
+
+.header {
+    display: flex;
+    background-color: #504c5a;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.lateral_menu a{
+    padding: 20px 30px;
+}
+
+.lateral_menu--active{
+    left: 0vw;
+}
+
+.colections {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.colection img{
+    width: 100vw;
+    height: 70vw;
+    background-color: #504c5a;
+}
+
+.colection h1{
+    padding-block: 20px;
+    font-size: 38px;
+}
+
+.selectors span{
+    font-size: 15px;
+}
+
+.liked_menu{
+    width: 25vw;
+    background-color: #504c5a;
+    height: 15vh;
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    position:absolute;
+    margin-left: 75vw;
+}
+
+.header button:hover{
+    color: aliceblue;
+}
+
+.liked_menu--active{
+    display: flex;
+}
+
+.liked_menu_item{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    padding-inline: 20px;
+}
+
+.liked_menu_item a:hover{
+    color: aliceblue;
+}
+
+.liked_item :hover{
+    color: aliceblue;
+}
