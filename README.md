@@ -2,9 +2,10 @@
 
 ## Status: working
 
-## Languages
+## Languages and frameworks
 
 * HTML
 * CSS
 * JavaScript
 * Python
+* swiper.js
