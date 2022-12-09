@@ -1,10 +1,17 @@
+:root{
+    --cor_fundo: #D6D6D6;
+    --cor_destaque: #6B6B6B;
+    --cor_secundaria: #ffffff;
+    --margem:50px 0px
+}
+
 body{
-    background-color: darkgray;
+    background-color: var(--cor_secundaria);
 }
 
 .lateral_menu{
     width: 40vw;
-    background-color: #504c5a;
+    background-color: var(--cor_destaque);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,9 +19,9 @@ body{
     left: -40vw
 }
 
-.header {
+.header_container {
     display: flex;
-    background-color: #504c5a;
+    background-color: var(--cor_destaque);
     justify-content: space-between;
     padding: 20px;
 }
@@ -27,16 +34,21 @@ body{
     left: 0vw;
 }
 
-.colections {
+.lateral_menu :hover{
+    color: var(--cor_secundaria);
+}
+
+.colection_container {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .colection img{
     width: 100vw;
-    height: 70vw;
-    background-color: #504c5a;
+    height: 50vw;
+    background-color: var(--cor_destaque);
 }
 
 .colection h1{
@@ -49,18 +61,18 @@ body{
 }
 
 .liked_menu{
-    width: 25vw;
-    background-color: #504c5a;
-    height: 15vh;
+    width: 40vw;
+    background-color: var(--cor_destaque);
+    min-height: 25vh;
     display: none;
     justify-content: space-around;
     flex-direction: column;
     position:absolute;
-    margin-left: 75vw;
+    margin-left: 60vw;
 }
 
-.header button:hover{
-    color: aliceblue;
+.header_container button:hover{
+    color: var(--cor_secundaria);
 }
 
 .liked_menu--active{
@@ -68,15 +80,33 @@ body{
 }
 
 .liked_menu_item{
-    display: grid;
-    grid-template-columns: 90% 10%;
-    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-.liked_menu_item a:hover{
-    color: aliceblue;
+.liked_menu_item :hover{
+    color: var(--cor_secundaria);
 }
 
 .liked_item :hover{
-    color: aliceblue;
+    color: var(--cor_secundaria);
+}
+
+.more_items{
+    text-align: center;
+    padding: 10px;
+    border: solid #000000 1px;
+}
+
+.promo_item{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.promo_item img{
+    width: 80vw;
+    height: 50vw;
+    margin-bottom: 30px;
 }
