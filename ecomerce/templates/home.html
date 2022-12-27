@@ -1,0 +1,53 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<section class="promo-container">
+    <button class="control arrow-left">◀</button>
+    <button class="control arrow-right">▶</button>
+    <div class="promo">
+        <div class="promo-gallery">
+        <img src="../static/teste1.jpg" alt="teste1" class="item currentitem">
+        <img src="../static/teste2.jpg" alt="teste2" class="item currentitem">
+        <img src="../static/teste3.jpg" alt="teste3" class="item currentitem">
+        <img src="../static/teste4.jpg" alt="teste4" class="item currentitem">
+        </div>
+    </div>
+</section>
+
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 1">
+        <p>produto 1</p>
+        <p>R$ 25,50</p>
+    </div>
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 2">
+        <p>produto 2</p>
+        <p>R$ 25,50</p>
+    </div>
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 3">
+        <p>produto 3</p>
+        <p>R$ 25,50</p>
+    </div>
+
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 4">
+        <p>produto 4</p>
+        <p>R$ 25,50</p>
+    </div>
+
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 5">
+        <p>produto 5</p>
+        <p>R$ 25,50</p>
+    </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+  </div>
+{% endblock %}
