@@ -1,10 +1,19 @@
-.swiper-slide img{
-    width: 100%;
-}
 .swiper{
     margin-block: 20px;
+    z-index: 1;
+    
 }
 
 .swiper-slide{
     text-align: center;
+    z-index: 1;
+}
+
+.swiper img{
+    max-width: 30vw;
+}
+
+.slideimage{
+    border-radius: 15%;
+    z-index: 1;
 }

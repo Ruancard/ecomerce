@@ -1,136 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="/static/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/static/carossel.css">
-    <link rel="stylesheet" href="/static/style.css">
-    <title>Joyce biju</title>
-</head>
-<body>
-    <header class="header_container">
-        <button class="header_menu" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
-        <img src="assets/img/logo.svg" alt="Logotipo joycebiju" class="header--logo">
-        <button class="header_liked" aria-label="curtidos"><span class="material-symbols-outlined">favorite</span></button>
-    </header>
-
-    <nav class="lateral_menu">
-
-        <a href="">
-            <img src="" alt="Logotipo joycebiju" class="lateral_menu--logo">    
-        </a>
-        
-        <a href="#" class="lateral_menu__link lateral_menu__link--inicio lateral_menu__link--active">inicio</a>
-        
-        <a href="#" class="lateral_menu__link lateral_menu__link--colecoes">coleções</a>
-        
-        <a href="#" class="lateral_menu__link lateral_menu__link--pulseiras">pulseiras</a>
-        
-        <a href="#" class="lateral_menu__link lateral_menu__link--colares">colares</a>
-        
-        <a href="#" class="lateral_menu__link lateral_menu__link--brincos">brincos</a>
-        
-        <a href="#" class="lateral_menu__link lateral_menu__link--sobrenos">sobre nós</a>
-    </nav>
-
-    <nav class="liked_menu">
-        
-        <div class="liked_menu_item liked_menu-1">
-            <a href="#">pulseira</a>
-            <button class="liked_item"><span class="material-symbols-outlined">favorite</span></button>
+{% extends "template.html" %}
+{% block conteudo %}
+<section class="promo-container">
+    <button class="control arrow-left">◀</button>
+    <button class="control arrow-right">▶</button>
+    <div class="promo">
+        <div class="promo-gallery">
+        <img src="../static/teste1.jpg" alt="teste1" class="item currentitem">
+        <img src="../static/teste2.jpg" alt="teste2" class="item currentitem">
+        <img src="../static/teste3.jpg" alt="teste3" class="item currentitem">
+        <img src="../static/teste4.jpg" alt="teste4" class="item currentitem">
         </div>
+    </div>
+</section>
 
-        <div class="liked_menu_item liked_menu-2">
-            <a href="#">colar</a>
-            <button class="liked_item"><span class="material-symbols-outlined">favorite</span></button>
-        </div>
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 1">
+        <p>produto 1</p>
+        <p>R$ 25,50</p>
+    </div>
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 2">
+        <p>produto 2</p>
+        <p>R$ 25,50</p>
+    </div>
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 3">
+        <p>produto 3</p>
+        <p>R$ 25,50</p>
+    </div>
 
-        <div class="liked_menu_item liked_menu-3">
-            <a href="#">brinco</a>
-            <button class="liked_item"><span class="material-symbols-outlined">favorite</span></button>
-        </div>
-        
-        <div class="more_items">
-            <a href="#">exibir todos os itens...</a>
-        </div>
-    </nav>
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 4">
+        <p>produto 4</p>
+        <p>R$ 25,50</p>
+    </div>
 
-    <main>
-        <section class="colection_container">
-            <div class="colection colection-1">
-                <img src="../static/img.jpg" alt="colecao">
-                <h1>coleção de inverno</h1>
-            </div>
-            <div class="seletors">
-                    <input type="radio" name="slider-selector">
-                    <input type="radio" name="slider-selector">
-                    <input type="radio" name="slider-selector">
-                    <input type="radio" name="slider-selector">
-                    <input type="radio" name="slider-selector">
-            </div>
-        </section>
-
-        <section class="promo_container">
-            <div class="promo_item promo-1">
-                <img src="../static/img.jpg" alt="colecao">
-                <h1>coleção de inverno</h1>
-            </div>
-        </section>
-
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="../static/coleçãoagua.jpg" alt="slide 1">
-                <p>produto 1</p>
-                <p>R$ 25,50</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="../static/coleçãoagua.jpg" alt="slide 2">
-                <p>produto 2</p>
-                <p>R$ 25,50</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="../static/coleçãoagua.jpg" alt="slide 3">
-                <p>produto 3</p>
-                <p>R$ 25,50</p>
-            </div>
-
-            <div class="swiper-slide">
-                <img src="../static/coleçãoagua.jpg" alt="slide 4">
-                <p>produto 4</p>
-                <p>R$ 25,50</p>
-            </div>
-
-            <div class="swiper-slide">
-                <img src="../static/coleçãoagua.jpg" alt="slide 5">
-                <p>produto 5</p>
-                <p>R$ 25,50</p>
-            </div>
-              ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-          </div>
-
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 20,
-            slidesPerView: 2.5,
-          });
-    </script>
-
-    <script src="../index.js"></script>
-    
-
-</body>
-</html>
+    <div class="swiper-slide">
+        <img class="slideimage"src="../static/produto.jpg" alt="slide 5">
+        <p>produto 5</p>
+        <p>R$ 25,50</p>
+    </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+  </div>
+{% endblock %}
